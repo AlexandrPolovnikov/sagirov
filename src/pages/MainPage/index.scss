@@ -1,0 +1,160 @@
+.main-page {
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        width: 80vw;
+        &__logo {
+            width: 700px;
+            // height: 65px;
+            &-x {
+                margin-bottom: 30px;
+                width: 530px;
+                height: 65px;
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &__info {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 3px;
+        }
+    }
+    &__main {
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__left {
+            width: 50%;
+            // border: 1px solid white;
+
+            h1 {
+                font-size: 60px;
+                font-weight: 600;
+                color: #bdbdbd;
+            }
+        }
+        &__right {
+            height: 350px;
+            width: 350px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 70px;
+            text-align: center;
+            h2 {
+                letter-spacing: 3px;
+                font-size: 50px;
+                margin: 5px;
+            }
+            span {
+                padding: 5px;
+            }
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .main-page {
+        &__header {
+            width: 95vw;
+            &__logo {
+            }
+            &__info {
+                // display: flex;
+                margin: 3px;
+            }
+        }
+        &__main {
+            width: 95vw;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .main-page {
+        &__header {
+            width: 100vw;
+            justify-content: center;
+
+            &__logo {
+                width: 900px;
+                // border: 1px solid white;
+                height: 110px;
+            }
+            &__info {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .main-page {
+        &__header {
+            width: 100vw;
+            justify-content: center;
+
+            &__logo {
+                width: 500px;
+                height: 60px;
+            }
+            &__info {
+                display: none;
+            }
+        }
+
+        &__main {
+            gap: 30px;
+
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            &__left {
+                text-align: center;
+                // border: 1px solid white;
+                width: 90vw;
+            }
+        }
+    }
+}
+@media (max-width: 520px) {
+    .main-page {
+        &__header {
+            width: 100vw;
+            justify-content: center;
+
+            &__logo {
+                width: 300px;
+                // border: 1px solid white;
+                height: 36px;
+            }
+            &__info {
+                display: none;
+            }
+        }
+        &__main {
+            gap: 100px;
+            &__left {
+                h1 {
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #bdbdbd;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
